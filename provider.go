@@ -36,7 +36,7 @@ const (
 func main() {
 	fmt.Println("starting server...")
 	http.HandleFunc("/validate", validate)
-	
+
 	srv := &http.Server{
 		Addr:              ":8090",
 		ReadTimeout:       10 * time.Second,
