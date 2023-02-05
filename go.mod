@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/google/go-containerregistry v0.6.1-0.20210922191434-34b7f00d7a60
-	github.com/magefile/mage v1.11.0
+	github.com/magefile/mage v1.14.0
 	github.com/open-policy-agent/frameworks/constraint v0.0.0-20211029184625-8b4a99a9a65a
 	github.com/sigstore/cosign v1.3.1
 )
