@@ -19,6 +19,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"time"
 
 	"github.com/google/go-containerregistry/pkg/name"
 	"github.com/open-policy-agent/frameworks/constraint/pkg/externaldata"
