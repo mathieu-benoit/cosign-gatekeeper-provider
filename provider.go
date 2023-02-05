@@ -35,8 +35,15 @@ const (
 func main() {
 	fmt.Println("starting server...")
 	http.HandleFunc("/validate", validate)
+	
+	srv := &http.Server{
+		Addr:              ":8090",
+		ReadTimeout:       10 * time.Second,
+		WriteTimeout:      10 * time.Second,
+		ReadHeaderTimeout: 10 * time.Second,
+	}
 
-	if err := http.ListenAndServe(":8090", nil); err != nil {
+	if err := srv.ListenAndServe(); err != nil {
 		panic(err)
 	}
 }
